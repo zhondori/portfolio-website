@@ -1,0 +1,102 @@
+.parentComponent {
+    margin-top: 13vh;
+    background: url("../Images/shape.jpg") center center no-repeat;
+    background-size: cover;
+    height: auto;
+    padding-top: 10px;
+    width: 100%;
+}
+.col-md-12 {
+    padding: 0!important;
+}
+.heading {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.heading h3 {
+    color: #ffffff;
+    font-size: 38px;
+    text-shadow: 1px 4px 0 rgba(255, 255, 255, 0.2);
+}
+.cardCol {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 300px);
+    grid-gap: 15px;
+}
+@media (max-width:992px) {
+    .cardCol {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(8, 350px);
+    }
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 10px;
+    }
+    .buttons .button {
+        text-align: center;
+        margin: 5px 0!important;
+        width: 150px;
+    }
+    .cardImg {
+        border-top-right-radius: 50%;
+    } 
+    .cardContent h3,
+    .cardContent p {
+        margin-left: 10px;
+    }
+}
+@media (max-width:768px) {
+    .cardCol {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(8, 350px);
+    }
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 10px;
+    }
+    .buttons .button {
+        text-align: center;
+        margin: 5px 0!important;
+        width: 150px;
+    }
+    .cardImg {
+        border-top-right-radius: 50%;
+    } 
+    .cardContent h3,
+    .cardContent p {
+        margin-left: 10px;
+    }
+}
+@media (max-width:578px) {
+    .cardCol {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(8, 350px);
+    }
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 10px;
+    }
+    .buttons .button {
+        text-align: center;
+        margin: 5px 0!important;
+        width: 150px;
+    }
+    .cardImg {
+        border-top-right-radius: 50%;
+    } 
+    .cardContent h3,
+    .cardContent p {
+        margin-left: 10px;
+    }
+}

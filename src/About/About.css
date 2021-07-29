@@ -1,0 +1,135 @@
+.about-sec {
+  margin-top: 13vh;
+  height: auto;
+  background: linear-gradient(70deg, #4dffd3, #5dffa6);
+}
+.about-sec .container .row {
+  justify-content: center;
+}
+.heading h3 {
+  text-shadow: 2px 4px 0 #8a8a8a;
+  margin-bottom: 0;
+}
+.about-me {
+  width: 90%;
+  height: 90%;
+  border: 2px solid #001aff;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  padding: 20px !important;
+  height: 430px;
+  background: #0061c2;
+  color: #ffffff;
+}
+.img-me {
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.lazy-load-image-background.blur.lazy-load-image-loaded img.myImage {
+  height: 390px;
+  object-fit: contain;
+}
+.text-me {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.text-me h4 {
+  font-weight: 300;
+  line-height: 1.4;
+}
+.text-me h4 > span {
+  font-weight: 500;
+}
+.lang-imgs {
+  width: 100%;
+  height: auto;
+}
+.lang-imgs img {
+  width: 60px;
+  margin: 0 3px;
+}
+.lang-imgs img:nth-child(1) {
+  margin-left: 0;
+}
+
+@media (max-width: 992px) {
+  .about-sec {
+    height: 900px;
+  }
+  .about-me {
+    transform: rotateX(180deg);
+    grid-template-columns: 1fr;
+    height: auto;
+    width: 100%;
+  }
+  .lazy-load-image-background.blur.lazy-load-image-loaded img.myImage {
+    transform: rotateX(180deg);
+    height: 390px;
+    object-fit: cover;
+    width: 100%;
+  }
+  .img-me {
+    justify-content: center;
+    align-items: center;
+  }
+  .text-me {
+    transform: rotateX(180deg);
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-sec {
+    height: auto;
+  }
+  .about-me {
+    transform: rotateX(180deg);
+    grid-template-columns: 1fr;
+    height: 90%;
+    width: 100%;
+  }
+  .lazy-load-image-background.blur.lazy-load-image-loaded img.myImage {
+    transform: rotateX(180deg);
+    object-fit: cover;
+    width: 100%;
+  }
+  .img-me {
+    justify-content: center;
+    align-items: center;
+  }
+  .text-me {
+    transform: rotateX(180deg);
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-sec {
+    height: auto;
+  }
+  .about-me {
+    transform: rotateX(180deg);
+    grid-template-columns: 1fr;
+    height: 1140px;
+    width: 100%;
+  }
+  .lazy-load-image-background.blur.lazy-load-image-loaded img.myImage {
+    transform: rotateX(180deg);
+    height: 390px;
+    object-fit: cover;
+    width: 100%;
+  }
+  .img-me {
+    justify-content: center;
+    align-items: center;
+  }
+  .text-me {
+    transform: rotateX(180deg);
+    padding-top: 0;
+    justify-content: flex-start;
+  }
+}
