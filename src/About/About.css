@@ -12,12 +12,11 @@
 }
 .about-me {
   width: 90%;
-  height: 95%;
   border: 2px solid #001aff;
   display: grid;
   grid-template-columns: 60% 40%;
-  padding: 20px !important;
-  height: 430px;
+  padding: 10px !important;
+  height: 440px;
   background: #0061c2;
   color: #ffffff;
 }
